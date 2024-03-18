@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # [START cloudbuild_quickstart_build_dockerfile]
-FROM alpine
+FROM python: 3.9
 COPY quickstart.sh /
 CMD ["/quickstart.sh"]
 # [END cloudbuild_quickstart_build_dockerfile]
