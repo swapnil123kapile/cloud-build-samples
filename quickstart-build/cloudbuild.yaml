@@ -24,4 +24,4 @@ images:
 logsBucket: 'gs://cloud-build-tets'
 options:
        logging: GCS_ONLY
-# serviceAccount: 'projects/blissful-canyon-417604/serviceAccounts/
+serviceAccount: 'projects/blissful-canyon-417604/serviceAccounts/157395104822-compute'
