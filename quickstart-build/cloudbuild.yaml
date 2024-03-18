@@ -16,10 +16,10 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   script: |
-    docker build -t europe-west1-docker.pkg.dev/blissful-canyon-417604/Images for cloud-build-image1/quickstart-image:v1 .
+    docker build eu.gcr.io/blissful-canyon-417604/Images for cloud-build-image1/quickstart-image:v1 .
   automapSubstitutions: true
 images:
-- 'europe-west1-docker.pkg.dev/blissful-canyon-417604/quickstart-docker-repo/quickstart-image:v1'
+- 'eu.gcr.io/blissful-canyon-417604/quickstart-docker-repo/quickstart-image:v1'
 # [END cloudbuild_quickstart_build]
 logsBucket: 'gs://cloud-build-tets'
 options:
