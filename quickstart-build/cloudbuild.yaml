@@ -14,7 +14,7 @@
 
 # [START cloudbuild_quickstart_build]
 steps:
-- name: 'gcr.io/cloud-builders/docker'
+- name: 'eu.gcr.io/cloud-builders/docker'
   script: |
     docker build -t europe-west1-docker.pkg.dev/blissful-canyon-417604/Images for cloud-build-image1/quickstart-image:v1 .
   automapSubstitutions: true
