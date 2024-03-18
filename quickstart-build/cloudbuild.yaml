@@ -16,8 +16,12 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   script: |
-    docker build -t us-west2-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1 .
+    docker build -t europe-west1-docker.pkg.dev/blissful-canyon-417604/Images for cloud-build-image1/quickstart-image:v1 .
   automapSubstitutions: true
 images:
-- 'us-west2-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1'
+- 'europe-west1-docker.pkg.dev/blissful-canyon-417604/quickstart-docker-repo/quickstart-image:v1'
 # [END cloudbuild_quickstart_build]
+logsBucket: 'gs://cloud-build-tets'
+options:
+       logging: GCS_ONLY
+# serviceAccount: 'projects/blissful-canyon-417604/serviceAccounts/
